@@ -1803,27 +1803,37 @@
 }
 /* Fading entrances  */
 @-webkit-keyframes fadeIn {
-  from {
+  0%{
     opacity: 0;
   }
-
-  to {
+  25%{
+    opacity: 0;
+  }
+  50%{
+    opacity: 0;
+  }
+  100%{
     opacity: 1;
   }
 }
 @keyframes fadeIn {
-  from {
+  0%{
     opacity: 0;
   }
-
-  to {
+  25%{
+    opacity: 0;
+  }
+  50%{
+    opacity: 0;
+  }
+  100%{
     opacity: 1;
   }
 }
 .animate__fadeIn {
   -webkit-animation-name: fadeIn;
   animation-name: fadeIn;
-  animation: fadeIn 1s ease;
+  animation: fadeIn 2s ease;
 }
 @-webkit-keyframes fadeInDown {
   from {
