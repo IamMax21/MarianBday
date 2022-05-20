@@ -1,0 +1,209 @@
+@import url('https://fonts.googleapis.com/css2?family=Luckiest+Guy&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Caveat&family=Gochi+Hand&family=Indie+Flower&family=Patrick+Hand&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    border: 1px solid black;
+    border: none;
+    outline: none;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    background: #daf4ff;
+}
+
+body .container {
+    margin: auto;
+    background: rgb(217, 244, 255);
+    background: linear-gradient(180deg, rgba(217, 244, 255, 1) 0%, rgba(255, 255, 255, 1) 89%, rgba(217, 244, 255, 1) 100%), #daf4ff;
+    min-height: 650px;
+    width: 400px;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    overflow: hidden;
+}
+
+body .container .container-nubes .nube {
+    position: absolute;
+    width: 100px;
+    height: 60px;
+}
+body .container .container-nubes .absolute {
+    position: absolute;
+    width: 60px;
+}
+
+body .container .container-nubes .n-1 {
+    top: 10px;
+    left: -40px;
+    animation: fly 3s linear infinite;
+}
+
+body .container .container-nubes .n-2 {
+    top: 25px;
+    left: 130px;
+    width: 150px;
+    height: 80px;
+    animation: fly 5s linear infinite;
+    z-index: 1;
+}
+
+body .container .container-nubes .n-3 {
+    top: 25px;
+    left: 300px;
+    width: 80px;
+    height: 50px;
+    animation: fly 4s linear infinite;
+}
+
+body .container .container-nubes .n-4 {
+    top: 140px;
+    right: 11px;
+    width: 130px;
+    height: 80px;
+    animation: fly 4500ms linear infinite;
+}
+
+body .container .container-nubes .n-5 {
+    top: 130px;
+    right: 250px;
+    width: 180px;
+    height: 100px;
+    animation: fly 2800ms linear infinite;
+    z-index: 1;
+}
+body .container .container-nubes .cupcake {
+    bottom: 3%;
+    right: 19%;
+    z-index: 1;
+    transform: rotate(340deg);
+}
+body .container .container-nubes .mariposa {
+    bottom: 2%;
+    left: 50%;
+    transform: translateX(-100%) rotate(19deg);
+    width: 80px;
+    z-index: 1;
+}
+body .container .container-nubes .osito {
+    bottom: 12%;
+    left: 6%;
+    z-index: 1;
+    transform: rotate(20deg);
+}
+body .container .container-nubes .paleta {
+    bottom: 27%;
+    left: 1%;
+    z-index: 0;
+    width: 58px;
+    transform: rotate(45deg);
+}
+body .container .container-nubes .starblue {
+    top: 50px;
+    right: -70px;
+    z-index: 1;
+}
+body .container .container-nubes .corazon {
+    bottom: 15%;
+    right: -5%;
+    z-index: 1;
+    width: 90px;
+    transform: rotate(330deg);
+}
+
+body .container .banner {
+    position: relative;
+    z-index: 0;
+}
+
+body .container .banner .title-bg {
+    position: absolute;
+    letter-spacing: 10px;
+    top: 140px;
+    width: 100%;
+    color: transparent;
+    text-align: center;
+    font-size: 6rem;
+    font-weight: bold;
+    font-family: 'Luckiest Guy', cursive;
+    text-transform: initial;
+    background: #000;
+
+    background-image: url('./img/background.jpg');
+    background-size: 80%;
+    background-position: top 21px right 4px;
+
+    background-clip: text;
+    -webkit-background-clip: text;
+
+    -webkit-text-fill-color: transparent;
+}
+body .container .info {
+    margin-top: 1rem;
+    padding: 20px;
+    width: 100%;
+    font-size: 1.5rem;
+    font-weight: bold;
+    text-align: center;
+    font-family: 'Indie Flower', cursive;
+    text-shadow: 0px 1px 1px rgba(0,0,0,0.1);
+    line-height: 1.2;
+}
+body .container .info .calltoaction{
+    color: #ffc2d9;
+    font-family: 'Indie Flower', cursive;
+}
+body .container .info .name{
+    color: #ffc2d9;
+    font-size: 3rem;
+    font-weight: 500;
+    letter-spacing: 5px;
+    font-family: 'Pacifico', cursive;
+    text-shadow: 0px 1px 1px rgb(230 65 7 / 90%);
+    position: relative;
+}
+body .container .name .corona {
+    top: 3px;
+    left: 45%;
+    z-index: 1;
+    width: 25px;
+    transform: rotate(359deg);
+    position: absolute;
+    
+}
+body .container .description{
+    color: #d4a7ff;
+    font-size: 1.5rem;
+    font-weight: bold;
+    font-weight: 500;
+    margin-top: 2rem;
+}
+@keyframes fly {
+    0% {
+        transform: translateY(0px);
+    }
+
+    25% {
+        transform: translateY(10px);
+    }
+
+    50% {
+        transform: translateY(0px);
+    }
+
+    75% {
+        transform: translateY(-10px);
+    }
+
+    100% {
+        transform: translateY(0px);
+    }
+}
