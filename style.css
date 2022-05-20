@@ -6,8 +6,8 @@
     padding: 0;
     margin: 0;
     box-sizing: border-box;
-    border: 1px solid black;
     border: none;
+    border: 1px solid black;
     outline: none;
 }
 
@@ -23,7 +23,7 @@ body .container {
     margin: auto;
     background: rgb(217, 244, 255);
     background: linear-gradient(180deg, rgba(217, 244, 255, 1) 0%, rgba(255, 255, 255, 1) 89%, rgba(217, 244, 255, 1) 100%), #daf4ff;
-    min-height: 650px;
+    min-height: 100vh;
     width: 400px;
     position: relative;
     display: flex;
@@ -102,14 +102,14 @@ body .container .container-nubes .osito {
     transform: rotate(20deg);
 }
 body .container .container-nubes .paleta {
-    bottom: 15%;
+    bottom: 13%;
     left: 0%;
     z-index: 0;
     width: 58px;
     transform: rotate(45deg);
 }
 body .container .container-nubes .corazon {
-    bottom: 15%;
+    bottom: 13%;
     right: -5%;
     z-index: 1;
     width: 90px;
@@ -136,12 +136,13 @@ body .container .banner .title-bg {
 
     background-image: url('./img/background.jpg');
     background-size: 80%;
-    background-position: top 21px right 4px;
+    background-position: top 18px right 4px;
 
     background-clip: text;
     -webkit-background-clip: text;
 
     -webkit-text-fill-color: transparent;
+    margin-top: 1rem;
 }
 body .container .info {
     margin-top: 1rem;
